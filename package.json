@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap-portfolio",
+  "version": "1.0.0",
+  "description": "demo bootstrap setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshcoast/bootstrap-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshcoast/bootstrap-portfolio/issues"
+  },
+  "homepage": "https://github.com/joshcoast/bootstrap-portfolio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
