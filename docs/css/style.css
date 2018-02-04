@@ -1,0 +1,173 @@
+img {
+  max-width: 100%; }
+
+body {
+  background: #4EAAA4;
+  color: #777777;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  line-height: 1.5em;
+  background: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent 0), #B6CDCD;
+  background: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent 0), #B6CDCD;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent 0), #B6CDCD;
+  background-position: auto auto;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: 50px 50px;
+  background-size: 50px 50px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  color: #4EAAA4;
+  font-weight: 700; }
+
+main h1,
+aside h1 {
+  border-bottom: 2px solid #dadada;
+  padding-bottom: .75rem; }
+
+main a {
+  border-bottom: 3px solid #b4e7f8;
+  box-shadow: inset 0 -5px 0 #b4e7f8;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1); }
+
+main a:hover {
+  background: #b2e5dd;
+  text-decoration: none;
+  color: #777777; }
+
+main a:focus {
+  outline-color: #4EAAA4;
+  outline-style: solid;
+  outline-width: 2px; }
+
+.navbar .navbar-brand {
+  background: #4EAAA4;
+  color: white;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: 2em;
+  font-weight: 700;
+  padding: 30px 20px; }
+  .navbar .navbar-brand:hover {
+    color: white; }
+
+header .navbar-nav a {
+  border-right: 1px solid #a6a6a6; }
+
+header .navbar-nav li:last-child a {
+  border-right: none; }
+
+header .navbar .navbar-nav .nav-item a:link,
+header .navbar .navbar-nav .nav-item a:visited {
+  color: #a6a6a6;
+  text-decoration: none;
+  transition: all 0.15s cubic-bezier(0.33, 0.66, 0.66, 1); }
+
+header .navbar .navbar-nav .nav-item a:hover,
+header .navbar .navbar-nav .nav-item a:active {
+  color: #00e6d6; }
+
+header .navbar .navbar-nav .nav-item a:focus {
+  outline-color: #4EAAA4;
+  outline-style: solid;
+  outline-width: 2px; }
+
+header .navbar .navbar-nav .nav-item.active a {
+  color: #00e6d6; }
+
+.box-inner {
+  background: white;
+  padding: 20px;
+  border-radius: 3px;
+  border: 1px solid #ddd; }
+
+aside h1 {
+  font-size: 1.35rem; }
+
+.contact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex; }
+
+.contact-list li {
+  flex: 1;
+  text-align: center; }
+
+.contact-list li a {
+  display: block;
+  border: 2px solid transparent;
+  transition: all 0.15s cubic-bezier(0.33, 0.66, 0.66, 1); }
+
+.contact-list li a:focus {
+  display: block;
+  border: 2px solid #4EAAA4;
+  outline: none; }
+
+.contact-list .github {
+  color: black; }
+
+.contact-list .linkedin {
+  color: #0279B3; }
+
+.contact-list .stack {
+  color: #FDA428; }
+
+.contact-list li a {
+  font-size: 40px; }
+
+.contact-list a:hover {
+  color: #00e6d6;
+  transition: all 0.15s cubic-bezier(0.33, 0.66, 0.66, 1); }
+
+@media only screen and (min-width: 700px) {
+  .contact-list li a {
+    font-size: 30px; } }
+
+@media only screen and (min-width: 850px) {
+  .contact-list li a {
+    font-size: 40px; } }
+
+@media only screen and (min-width: 1000px) {
+  .contact-list li a {
+    font-size: 50px; } }
+
+footer {
+  background: #666666;
+  border-top: 5px solid #4EAAA4;
+  text-align: center; }
+
+footer .legal {
+  padding: 2rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: .75em;
+  margin: 0; }
+
+@media only screen and (min-width: 576px) {
+  .bio-message img {
+    width: 200px; } }
+
+html {
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* Avoid the IE 10-11 `min-height` bug. */ }
+
+.content-container {
+  flex: 1 0 auto;
+  /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */ }
+
+.footer {
+  flex-shrink: 0;
+  /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */ }
