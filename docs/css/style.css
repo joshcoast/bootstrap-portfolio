@@ -17,6 +17,10 @@ body {
   -webkit-background-size: 50px 50px;
   background-size: 50px 50px; }
 
+.container-fluid {
+  max-width: 1140px;
+  padding: 0 15px; }
+
 h1,
 h2,
 h3,
@@ -30,7 +34,8 @@ h6 {
 main h1,
 aside h1 {
   border-bottom: 2px solid #dadada;
-  padding-bottom: .75rem; }
+  padding-bottom: .75rem;
+  margin-bottom: .55em; }
 
 main a {
   border-bottom: 3px solid #b4e7f8;
@@ -59,12 +64,6 @@ main a:focus {
   .navbar .navbar-brand:hover {
     color: white; }
 
-header .navbar-nav a {
-  border-right: 1px solid #a6a6a6; }
-
-header .navbar-nav li:last-child a {
-  border-right: none; }
-
 header .navbar .navbar-nav .nav-item a:link,
 header .navbar .navbar-nav .nav-item a:visited {
   color: #a6a6a6;
@@ -83,6 +82,64 @@ header .navbar .navbar-nav .nav-item a:focus {
 header .navbar .navbar-nav .nav-item.active a {
   color: #00e6d6; }
 
+@media only screen and (min-width: 576px) {
+  header .navbar-nav a {
+    border-right: 1px solid #a6a6a6; }
+  header .navbar-nav li:last-child a {
+    border-right: none; } }
+
+/*-- Forms --*/
+form label,
+form input,
+form textarea {
+  display: block; }
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  margin-bottom: 20px;
+  border: 1px solid #E6E6E6;
+  font-size: .85em;
+  width: 100%;
+  padding: .5em 1em;
+  box-sizing: border-box;
+  outline-style: solid;
+  outline-color: rgba(255, 255, 255, 0);
+  outline-width: 2px;
+  transition: all 0.15s cubic-bezier(0.33, 0.66, 0.66, 1); }
+
+form textarea {
+  height: 11.56rem; }
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  outline-color: rgba(78, 170, 164, 0.75); }
+
+form input[type="submit"] {
+  background: #4EAAA4;
+  padding: 0.7rem 2rem;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
+  outline-style: solid;
+  outline-color: rgba(255, 255, 255, 0);
+  outline-width: 2px;
+  border: 1px solid white; }
+
+form input[type="submit"]:hover {
+  background: #397a76; }
+
+form input[type="submit"]:focus {
+  outline-color: rgba(47, 99, 95, 0.75); }
+
+form input::placeholder {
+  color: #BFBFBE; }
+
+.contact-form {
+  width: 100%; }
+
 .box-inner {
   background: white;
   padding: 20px;
@@ -90,7 +147,7 @@ header .navbar .navbar-nav .nav-item.active a {
   border: 1px solid #ddd; }
 
 aside h1 {
-  font-size: 1.35rem; }
+  font-size: 1.25rem; }
 
 .contact-list {
   margin: 0;
@@ -139,6 +196,52 @@ aside h1 {
 @media only screen and (min-width: 1000px) {
   .contact-list li a {
     font-size: 50px; } }
+
+/*-- Portfolio Grid --*/
+.portfolio-link {
+  position: relative;
+  margin-bottom: 30px; }
+
+.portfolio-link img {
+  width: 100%; }
+
+.portfolio-link a {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  color: white;
+  outline: none;
+  padding: 0.8em 1.25em;
+  font-size: 1.35em;
+  box-shadow: none;
+  border-bottom: none;
+  display: block;
+  position: absolute;
+  bottom: 2rem;
+  left: 15px;
+  right: 15px;
+  background: rgba(78, 170, 164, 0.85);
+  transition: all 0.5s cubic-bezier(0.33, 0.66, 0.66, 1); }
+
+.portfolio-link a:hover {
+  background: #4eaaa4;
+  color: white; }
+
+@media only screen and (min-width: 768px) {
+  .portfolio-link a .fa-arrow-right {
+    position: relative;
+    opacity: 0;
+    left: 20px; }
+  .portfolio-link a:hover .fa-arrow-right {
+    animation-name: moveright;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; }
+  @keyframes moveright {
+    0% {
+      opacity: 0;
+      left: 0px; }
+    100% {
+      opacity: 1;
+      left: 20px; } } }
 
 footer {
   background: #666666;
